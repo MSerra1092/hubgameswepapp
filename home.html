@@ -11,7 +11,7 @@
       <div class="site-header__inner">
         <a
           class="site-header__brand"
-          href="#"
+          href="./index.html"
           aria-label="Inicio HorseHubGames"
         >
           <span class="site-header__logo" aria-hidden="true">
@@ -42,7 +42,7 @@
             <li class="site-header__nav-item">
               <a
                 class="site-header__nav-link site-header__nav-link--active"
-                href="#"
+                href="./home.html"
                 >Inicio</a
               >
             </li>
@@ -104,16 +104,18 @@
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                fill="currentColor"
-                class="icon icon-tabler icons-tabler-filled icon-tabler-bell"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-bell"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path
-                  d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z"
+                  d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
                 />
-                <path
-                  d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
-                />
+                <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
               </svg>
             </span>
             <span class="site-header__action-label hidden-span"
@@ -121,32 +123,48 @@
             >
           </button>
 
-          <a class="site-header__profile" href="#perfil">
-            <span class="site-header__avatar hidden-span" aria-hidden="true"
+          <a
+            class="site-header__profile"
+            href="./profile.html"
+            data-has-avatar="true"
+          >
+            <span
+              class="site-header__avatar-fallback hidden-span"
+              aria-hidden="true"
               >A</span
             >
             <span class="site-header__profile-name hidden-span"
               >Alex Johnson</span
             >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-              <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-              <path
-                d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+            <span class="site-header__avatar-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path
+                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                />
+              </svg>
+            </span>
+
+            <span class="site-header__avatar-media">
+              <img
+                class="site-header__avatar-image"
+                src="./alex-avatar.svg"
+                alt="mocked user avatar, man smiling to the camera"
               />
-            </svg>
+            </span>
           </a>
         </div>
       </div>
@@ -171,8 +189,8 @@
               <span class="home-actions__icon" aria-hidden="true">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -195,8 +213,8 @@
               <span class="home-actions__icon" aria-hidden="true">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"

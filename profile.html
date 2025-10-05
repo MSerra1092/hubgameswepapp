@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HorseHubGames - Perfil de usuario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page page--authenticated">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          class="site-header__brand"
+          href="./index.html"
+          aria-label="Inicio HorseHubGames"
+        >
+          <span class="site-header__logo" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-chess-knight"
+              role="img"
+            >
+              <title>Caballo de ajedrez</title>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M8.959 1.99l-.147 .028l-.115 .029a1 1 0 0 0 -.646 1.27l.749 2.245l-2.815 1.735a2 2 0 0 0 -.655 2.751l.089 .133a2 2 0 0 0 1.614 .819l1.563 -.001l-1.614 4.674a1 1 0 0 0 .945 1.327h7.961a1 1 0 0 0 1 -.978l.112 -5c0 -3.827 -1.555 -6.878 -4.67 -7.966l-2.399 -.83l-.375 -.121l-.258 -.074l-.135 -.031l-.101 -.013l-.055 -.001l-.048 .003z"
+              />
+              <path
+                d="M18 18h-12a1 1 0 0 0 -1 1a2 2 0 0 0 2 2h10a2 2 0 0 0 1.987 -1.768l.011 -.174a1 1 0 0 0 -.998 -1.058z"
+              />
+            </svg>
+          </span>
+          <span class="site-header__title">HorseHubGames</span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Navegación principal">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item">
+              <a
+                class="site-header__nav-link site-header__nav-link--active"
+                href="./home.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Juegos</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Comunidad</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Soporte</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="site-header__search" role="search">
+          <label class="site-header__search-label" for="global-search">
+            <span class="site-header__search-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </span>
+            <span class="hidden-span">Buscar juegos</span>
+          </label>
+          <input
+            class="site-header__search-input"
+            type="search"
+            name="global-search"
+            id="global-search"
+            placeholder="Busca por título, género o jugador"
+            autocomplete="off"
+            aria-label="Buscar juegos por título, género o jugador"
+          />
+        </form>
+
+        <div class="site-header__actions site-header__actions--user">
+          <button
+            class="site-header__action site-header__action--notifications"
+            type="button"
+            aria-controls="notifications-panel"
+            aria-expanded="false"
+          >
+            <span class="site-header__action-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-bell"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+                />
+                <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+              </svg>
+            </span>
+            <span class="site-header__action-label hidden-span"
+              >Notificaciones</span
+            >
+          </button>
+
+          <a
+            class="site-header__profile"
+            href="./profile.html"
+            data-has-avatar="true"
+          >
+            <span
+              class="site-header__avatar-fallback hidden-span"
+              aria-hidden="true"
+              >A</span
+            >
+            <span class="site-header__profile-name hidden-span"
+              >Alex Johnson</span
+            >
+            <span class="site-header__avatar-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path
+                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                />
+              </svg>
+            </span>
+
+            <span class="site-header__avatar-media">
+              <img
+                class="site-header__avatar-image"
+                src="./alex-avatar.svg"
+                alt="mocked user avatar, man smiling to the camera"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="profile" aria-labelledby="profile-title">
+      <div class="profile__inner">
+        <aside class="profile-sidebar" aria-label="Navegación del perfil">
+          <nav class="profile-sidebar__nav" aria-label="Secciones del perfil">
+            <ul class="profile-sidebar__list">
+              <li class="profile-sidebar__item">
+                <a
+                  class="profile-sidebar__link profile-sidebar__link--active"
+                  href="#informacion-personal"
+                >
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-user-circle"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path
+                        d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label"
+                    >Información personal</span
+                  >
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#estadisticas">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-chart-bar-popular"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+                      />
+                      <path
+                        d="M9 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+                      />
+                      <path
+                        d="M15 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+                      />
+                      <path d="M4 20h14" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Estadísticas</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#logros">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-trophy"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M8 21l8 0" />
+                      <path d="M12 17l0 4" />
+                      <path d="M7 4l10 0" />
+                      <path d="M17 4v8a5 5 0 0 1 -10 0v-8" />
+                      <path d="M5 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                      <path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Logros</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#historial">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-history"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 8l0 4l2 2" />
+                      <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label"
+                    >Historial de partidas</span
+                  >
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#notificaciones">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-bell"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+                      />
+                      <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Notificaciones</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#seguridad">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-shield-half"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M11.998 2l.032 .002l.086 .005a1 1 0 0 1 .342 .104l.105 .062l.097 .076l.016 .015l.247 .21a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.791 -2.75l.046 -.036l.053 -.041a1 1 0 0 1 .217 -.112l.075 -.023l.036 -.01a1 1 0 0 1 .12 -.022l.086 -.005zm.002 2.296l-.176 .135a13 13 0 0 1 -7.288 2.572l-.264 .006l-.064 .31a11 11 0 0 0 1.064 7.175l.17 .314a11 11 0 0 0 6.49 5.136l.068 .019z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Seguridad</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#ajustes">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-settings"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+                      />
+                      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Ajustes globales</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#suscripcion">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-calendar"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z"
+                      />
+                      <path
+                        d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Suscripción</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div class="profile-content">
+          <header class="profile-header">
+            <div class="profile-header__info">
+              <div class="profile-header__media" data-has-avatar="true">
+                <span
+                  class="profile-header__avatar profile-header__avatar--icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path
+                      d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="profile-header__avatar profile-header__avatar--image"
+                >
+                  <img src="./alex-avatar.svg" alt="Retrato de Alex Johnson" />
+                </span>
+              </div>
+              <div class="profile-header__details">
+                <p class="profile-header__name">Alex Johnson</p>
+                <p class="profile-header__handle">@alex-j</p>
+                <p class="profile-header__meta">Se unió en {2021}</p>
+              </div>
+            </div>
+            <div class="profile-header__actions">
+              <button
+                class="profile-header__button profile-header__button--secondary"
+                type="button"
+              >
+                Previsualizar
+              </button>
+              <button
+                class="profile-header__button profile-header__button--primary"
+                type="button"
+              >
+                Guardar cambios
+              </button>
+            </div>
+          </header>
+
+          <section
+            class="profile-section"
+            id="informacion-personal"
+            aria-labelledby="profile-personal"
+          >
+            <header class="profile-section__header">
+              <h2 class="profile-section__title" id="profile-personal">
+                Información personal
+              </h2>
+              <div class="profile-section__controls">
+                <label class="profile-section__label" for="personal-visibility">
+                  <span class="hidden-span"
+                    >Visibilidad de la información personal</span
+                  >
+                </label>
+                <select
+                  class="profile-section__visibility"
+                  name="personal-visibility"
+                  id="personal-visibility"
+                >
+                  <option value="all">Visible para todos</option>
+                  <option value="friends">Sólo amigos</option>
+                  <option value="none">Nadie</option>
+                </select>
+              </div>
+            </header>
+
+            <form class="profile-form" action="submit" method="post">
+              <div class="profile-form__row">
+                <div class="profile-form__field">
+                  <label class="profile-form__label" for="profile-username"
+                    >Nombre de usuario</label
+                  >
+                  <input
+                    class="profile-form__input"
+                    type="text"
+                    name="profile-username"
+                    id="profile-username"
+                    value="alex-j"
+                    autocomplete="username"
+                  />
+                </div>
+                <div class="profile-form__field">
+                  <label class="profile-form__label" for="profile-email"
+                    >Dirección de email</label
+                  >
+                  <input
+                    class="profile-form__input"
+                    type="email"
+                    name="profile-email"
+                    id="profile-email"
+                    value="alex.Johnson@example.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="profile-form__field profile-form__field--wide">
+                <label class="profile-form__label" for="profile-about"
+                  >Acerca de</label
+                >
+                <textarea
+                  class="profile-form__textarea"
+                  name="profile-about"
+                  id="profile-about"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="profile-form__row">
+                <div class="profile-form__field">
+                  <label class="profile-form__label" for="profile-job"
+                    >Trabajo</label
+                  >
+                  <input
+                    class="profile-form__input"
+                    type="text"
+                    name="profile-job"
+                    id="profile-job"
+                  />
+                </div>
+                <div class="profile-form__field">
+                  <label class="profile-form__label" for="profile-hobbies"
+                    >Hobbies</label
+                  >
+                  <input
+                    class="profile-form__input"
+                    type="text"
+                    name="profile-hobbies"
+                    id="profile-hobbies"
+                  />
+                </div>
+              </div>
+
+              <div class="profile-media" aria-labelledby="profile-media-title">
+                <div>
+                  <h2 class="profile-form__label" for="profile-hobbies">
+                    Foto de Perfil
+                  </h2>
+                </div>
+                <div class="profile-form__container">
+                  <div class="profile-media__preview" data-has-avatar="true">
+                    <span
+                      class="profile-media__avatar profile-media__avatar--icon"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path
+                          d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="profile-media__avatar profile-media__avatar--image"
+                    >
+                      <img
+                        src="./alex-avatar.svg"
+                        alt="Retrato de Sophia Rodriguez"
+                      />
+                    </span>
+                  </div>
+                  <div class="profile-media__actions">
+                    <button
+                      class="profile-media__button profile-media__button--secondary"
+                      type="button"
+                    >
+                      Cambiar
+                    </button>
+                    <button
+                      class="profile-media__button profile-media__button--secondary"
+                      type="button"
+                    >
+                      Confirmar
+                    </button>
+                    <button
+                      class="profile-media__button profile-media__button--danger"
+                      type="button"
+                    >
+                      Eliminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="profile-section" aria-labelledby="profile-social">
+            <header class="profile-section__header">
+              <h2 class="profile-section__title" id="profile-social">
+                Redes sociales
+              </h2>
+              <div class="profile-section__controls">
+                <label class="profile-section__label" for="social-visibility">
+                  <span class="hidden-span">Visibilidad de redes sociales</span>
+                </label>
+                <select
+                  class="profile-section__visibility"
+                  name="social-visibility"
+                  id="social-visibility"
+                >
+                  <option value="all">Visible para todos</option>
+                  <option value="friends">Sólo amigos</option>
+                  <option value="none">Nadie</option>
+                </select>
+              </div>
+            </header>
+
+            <form
+              class="profile-form profile-form--social"
+              action="submit"
+              method="post"
+            >
+              <div class="profile-form__field">
+                <label class="profile-form__label" for="profile-twitter"
+                  >Twitter</label
+                >
+                <input
+                  class="profile-form__input"
+                  type="url"
+                  name="profile-twitter"
+                  id="profile-twitter"
+                  placeholder="https://twitter.com/username"
+                />
+              </div>
+              <div class="profile-form__field">
+                <label class="profile-form__label" for="profile-instagram"
+                  >Instagram</label
+                >
+                <input
+                  class="profile-form__input"
+                  type="url"
+                  name="profile-instagram"
+                  id="profile-instagram"
+                  placeholder="https://instagram.com/username"
+                />
+              </div>
+              <div class="profile-form__field">
+                <label class="profile-form__label" for="profile-facebook"
+                  >Facebook</label
+                >
+                <input
+                  class="profile-form__input"
+                  type="url"
+                  name="profile-facebook"
+                  id="profile-facebook"
+                  placeholder="https://facebook.com/username"
+                />
+              </div>
+              <div class="profile-form__field">
+                <label class="profile-form__label" for="profile-linkedin"
+                  >LinkedIn</label
+                >
+                <input
+                  class="profile-form__input"
+                  type="url"
+                  name="profile-linkedin"
+                  id="profile-linkedin"
+                  placeholder="https://linkedin.com/in/username"
+                />
+              </div>
+            </form>
+          </section>
+
+          <section class="profile-section" aria-labelledby="profile-games">
+            <header class="profile-section__header">
+              <h2 class="profile-section__title" id="profile-games">
+                Juegos Favoritos
+              </h2>
+              <div class="profile-section__controls">
+                <label class="profile-section__label" for="games-visibility">
+                  <span class="hidden-span"
+                    >Visibilidad de juegos recomendados</span
+                  >
+                </label>
+                <select
+                  class="profile-section__visibility"
+                  name="games-visibility"
+                  id="games-visibility"
+                >
+                  <option value="all">Visible para todos</option>
+                  <option value="friends">Sólo amigos</option>
+                  <option value="none">Nadie</option>
+                </select>
+              </div>
+            </header>
+
+            <div class="profile-games">
+              <article class="profile-games__item">
+                <figure class="profile-games__media">
+                  <img src="./chess-394_640.jpg" alt="Tablero de ajedrez" />
+                </figure>
+                <p class="profile-games__title">Ajedrez</p>
+              </article>
+              <article class="profile-games__item">
+                <figure class="profile-games__media">
+                  <img
+                    src="./tic-tac-toe-392_640.jpg"
+                    alt="Tablero de Ta Te Ti"
+                  />
+                </figure>
+                <p class="profile-games__title">Ta Te Ti</p>
+              </article>
+              <article class="profile-games__item profile-games__item--add">
+                <button class="profile-games__button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 5v14" />
+                    <path d="M5 12h14" />
+                  </svg>
+                  <span>Añadir</span>
+                </button>
+              </article>
+            </div>
+          </section>
+
+          <section class="profile-section" aria-labelledby="profile-activity">
+            <header class="profile-section__header">
+              <h2 class="profile-section__title" id="profile-activity">
+                Muro de actividad
+              </h2>
+              <div class="profile-section__controls">
+                <label class="profile-section__label" for="activity-visibility">
+                  <span class="hidden-span"
+                    >Visibilidad del muro de actividad</span
+                  >
+                </label>
+                <select
+                  class="profile-section__visibility"
+                  name="activity-visibility"
+                  id="activity-visibility"
+                >
+                  <option value="all">Visible para todos</option>
+                  <option value="friends">Sólo amigos</option>
+                  <option value="none">Nadie</option>
+                </select>
+              </div>
+            </header>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <small class="site-footer__copy"
+        >© HorseHubGames. Todos los derechos reservados.</small
+      >
+    </footer>
+  </body>
+</html>
