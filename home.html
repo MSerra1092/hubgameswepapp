@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HorseHubGames - Inicio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page page--authenticated">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          class="site-header__brand"
+          href="#"
+          aria-label="Inicio HorseHubGames"
+        >
+          <span class="site-header__logo" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-chess-knight"
+              role="img"
+            >
+              <title>Caballo de ajedrez</title>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M8.959 1.99l-.147 .028l-.115 .029a1 1 0 0 0 -.646 1.27l.749 2.245l-2.815 1.735a2 2 0 0 0 -.655 2.751l.089 .133a2 2 0 0 0 1.614 .819l1.563 -.001l-1.614 4.674a1 1 0 0 0 .945 1.327h7.961a1 1 0 0 0 1 -.978l.112 -5c0 -3.827 -1.555 -6.878 -4.67 -7.966l-2.399 -.83l-.375 -.121l-.258 -.074l-.135 -.031l-.101 -.013l-.055 -.001l-.048 .003z"
+              />
+              <path
+                d="M18 18h-12a1 1 0 0 0 -1 1a2 2 0 0 0 2 2h10a2 2 0 0 0 1.987 -1.768l.011 -.174a1 1 0 0 0 -.998 -1.058z"
+              />
+            </svg>
+          </span>
+          <span class="site-header__title">HorseHubGames</span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Navegación principal">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item">
+              <a
+                class="site-header__nav-link site-header__nav-link--active"
+                href="#"
+                >Inicio</a
+              >
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Juegos</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Comunidad</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Soporte</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="site-header__search" role="search">
+          <label class="site-header__search-label" for="global-search">
+            <span class="site-header__search-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </span>
+            <span class="hidden-span">Buscar juegos</span>
+          </label>
+          <input
+            class="site-header__search-input"
+            type="search"
+            name="global-search"
+            id="global-search"
+            placeholder="Busca por título, género o jugador"
+            autocomplete="off"
+            aria-label="Buscar juegos por título, género o jugador"
+          />
+        </form>
+
+        <div class="site-header__actions site-header__actions--user">
+          <button
+            class="site-header__action site-header__action--notifications"
+            type="button"
+            aria-controls="notifications-panel"
+            aria-expanded="false"
+          >
+            <span class="site-header__action-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-bell"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z"
+                />
+                <path
+                  d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
+                />
+              </svg>
+            </span>
+            <span class="site-header__action-label hidden-span"
+              >Notificaciones</span
+            >
+          </button>
+
+          <a class="site-header__profile" href="#perfil">
+            <span class="site-header__avatar hidden-span" aria-hidden="true"
+              >A</span
+            >
+            <span class="site-header__profile-name hidden-span"
+              >Alex Johnson</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path
+                d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="home">
+      <section class="home__hero" aria-labelledby="home-welcome">
+        <div class="home__hero-content">
+          <p class="home__greeting">Hola de nuevo,</p>
+          <h1 class="home__headline" id="home-welcome">
+            ¡Bienvenido de vuelta, <span class="home__user-name">Alex</span>!
+          </h1>
+          <p class="home__description">
+            Sigue tu progreso, explora nuevos desafíos y únete a partidas
+            creadas por tus amigos.
+          </p>
+          <div class="home-actions" aria-label="Acciones rápidas">
+            <a
+              class="home-actions__link home-actions__link--create"
+              href="#crear-partida"
+            >
+              <span class="home-actions__icon" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 5l0 14" />
+                  <path d="M5 12l14 0" />
+                </svg>
+              </span>
+              Crear partida
+            </a>
+            <a
+              class="home-actions__link home-actions__link--quick"
+              href="#partida-rapida"
+            >
+              <span class="home-actions__icon" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+                  />
+                </svg>
+              </span>
+              Partida rápida
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="home__library" aria-labelledby="home-library-title">
+        <header class="home__section-header">
+          <div class="home__section-heading">
+            <h2 class="home__section-title" id="home-library-title">
+              Explora juegos
+            </h2>
+            <p class="home__section-subtitle hidden-span">
+              Personaliza los filtros para encontrar tu próxima aventura.
+            </p>
+          </div>
+          <form class="home-filters" aria-label="Filtrar juegos disponibles">
+            <div class="home-filters__group">
+              <label
+                class="home-filters__label hidden-span"
+                for="filter-category"
+                >Categoría</label
+              >
+              <select
+                class="home-filters__control"
+                name="category"
+                id="filter-category"
+              >
+                <option value="all">Todas</option>
+                <option value="adventure">Aventura</option>
+                <option value="strategy">Estrategia</option>
+                <option value="puzzle">Puzzle</option>
+                <option value="sports">Deportes</option>
+              </select>
+            </div>
+            <div class="home-filters__group">
+              <label class="home-filters__label hidden-span" for="filter-sort"
+                >Ordenar por</label
+              >
+              <select
+                class="home-filters__control"
+                name="sort"
+                id="filter-sort"
+              >
+                <option value="popular">Popularidad</option>
+                <option value="rated">Mejor valorados</option>
+                <option value="recent">Nuevos</option>
+              </select>
+            </div>
+            <div class="home-filters__group home-filters__group--toggle">
+              <input
+                class="home-filters__checkbox hidden-span"
+                type="checkbox"
+                name="friends-only"
+                id="filter-friends"
+                aria-label="Mostrar partidas de amigos"
+              />
+              <label class="home-filters__toggle" for="filter-friends">
+                Amigos
+              </label>
+            </div>
+          </form>
+        </header>
+
+        <div class="home-grid" role="list">
+          <article class="home-card" role="listitem">
+            <div class="home-card__media" aria-hidden="true">
+              <img src="./chess-394_640.jpg" alt="" />
+            </div>
+            <div class="home-card__content">
+              <h3 class="home-card__title">Ajedrez clásico</h3>
+              <p class="home-card__description">
+                Partidas 1 vs 1 para enfrentarte a tus amigos o desafiar a la
+                IA.
+              </p>
+              <div class="home-card__meta">
+                <span class="home-card__tag">Estrategia</span>
+                <span class="home-card__tag">Ranking activo</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="home-card" role="listitem">
+            <div class="home-card__media" aria-hidden="true">
+              <img src="./tic-tac-toe-392_640.jpg" alt="" />
+            </div>
+            <div class="home-card__content">
+              <h3 class="home-card__title">Ta Te Ti clásico</h3>
+              <p class="home-card__description">
+                Inicia partidas rápidas y escala posiciones en el ranking
+                semanal.
+              </p>
+              <div class="home-card__meta">
+                <span class="home-card__tag">Casual</span>
+                <span class="home-card__tag">Multijugador</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="home-card" role="listitem">
+            <div class="home-card__media" aria-hidden="true">
+              <img src="./chess-394_640.jpg" alt="" />
+            </div>
+            <div class="home-card__content">
+              <h3 class="home-card__title">Ajedrez Blitz</h3>
+              <p class="home-card__description">
+                Partidas cronometradas de 5 minutos para poner a prueba tus
+                reflejos.
+              </p>
+              <div class="home-card__meta">
+                <span class="home-card__tag">Competitivo</span>
+                <span class="home-card__tag">Tiempo real</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="home-card" role="listitem">
+            <div class="home-card__media" aria-hidden="true">
+              <img src="./tic-tac-toe-392_640.jpg" alt="" />
+            </div>
+            <div class="home-card__content">
+              <h3 class="home-card__title">Ta Te Ti clásico</h3>
+              <p class="home-card__description">
+                Inicia partidas rápidas y escala posiciones en el ranking
+                semanal.
+              </p>
+              <div class="home-card__meta">
+                <span class="home-card__tag">Casual</span>
+                <span class="home-card__tag">Multijugador</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section
+      class="notifications"
+      id="notifications-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="notifications-title"
+      hidden
+    >
+      <div class="notifications__dialog">
+        <header class="notifications__header">
+          <h2 class="notifications__title" id="notifications-title">
+            Notificaciones
+          </h2>
+          <button
+            class="notifications__close"
+            type="button"
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
+        </header>
+        <form
+          class="notifications__filters"
+          aria-label="Configurar notificaciones"
+        >
+          <fieldset class="notifications__status">
+            <legend class="notifications__legend">Estado</legend>
+            <label class="notifications__option">
+              <input
+                type="radio"
+                name="notification-status"
+                value="all"
+                checked
+              />
+              Todas
+            </label>
+            <label class="notifications__option">
+              <input type="radio" name="notification-status" value="unread" />
+              No leídas
+            </label>
+            <label class="notifications__option">
+              <input type="radio" name="notification-status" value="read" />
+              Leídas
+            </label>
+          </fieldset>
+          <label class="notifications__sound">
+            <input type="checkbox" name="notification-sound" checked />
+            Activar sonido al recibir nuevas notificaciones
+          </label>
+        </form>
+        <ul class="notifications__list">
+          <li class="notifications__item notifications__item--unread">
+            <h3 class="notifications__item-title">Partida nueva disponible</h3>
+            <p class="notifications__item-text">
+              María creó una sala Blitz, únete antes de que se complete.
+            </p>
+            <time class="notifications__item-time" datetime="2024-05-16T17:45"
+              >Hace 5 minutos</time
+            >
+          </li>
+          <li class="notifications__item">
+            <h3 class="notifications__item-title">Recompensa diaria</h3>
+            <p class="notifications__item-text">
+              Reclamaste tu recompensa diaria: 500 monedas.
+            </p>
+            <time class="notifications__item-time" datetime="2024-05-16T08:15"
+              >Hoy 08:15</time
+            >
+          </li>
+          <li class="notifications__item">
+            <h3 class="notifications__item-title">Amigo conectado</h3>
+            <p class="notifications__item-text">
+              Lucas está online, invita a una partida rápida.
+            </p>
+            <time class="notifications__item-time" datetime="2024-05-15T22:10"
+              >Ayer</time
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small class="site-footer__copy"
+        >© HorseHubGames. Todos los derechos reservados.</small
+      >
+    </footer>
+  </body>
+</html>
