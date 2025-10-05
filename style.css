@@ -9,6 +9,8 @@
   --primary-dark: #0a3d66;
   --primary-hover: #0d5ba8;
   --primary-light: #09f;
+  --secondary-hover-bg: rgba(9, 153, 255, 0.1);
+  --secondary-border-color: rgba(9, 153, 255, 0.4);
   --background: #06182a;
   --text-primary: #ffffff;
   --text-secondary: #cbd5e1;
@@ -155,17 +157,20 @@ a:focus-visible {
 .button--secondary:hover,
 .button--secondary:focus-visible {
   color: var(--text-primary);
-  border-color: var(--primary-light);
+  color: var(--primary-light);
+  border-color: var(--secondary-border-color);
+  background-color: var(--secondary-hover-bg);
 }
 
 .auth {
   flex: 1;
-  max-width: 1200px;
+  width: min(100%, 760px);
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 2.5rem;
+  padding: 1vh 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
 }
 
 .auth__intro {
@@ -195,10 +200,12 @@ a:focus-visible {
 }
 
 .auth__form-section {
+  width: min(100%, 480px);
   background: var(--card-bg);
   border-radius: 1rem;
-  padding: 2rem 1.5rem;
+  padding: 2.25rem 1.75rem;
   box-shadow: 0 24px 48px var(--shadow);
+  margin: 0 auto;
 }
 
 .auth-form {
@@ -222,6 +229,7 @@ a:focus-visible {
   padding: 0.75rem 1rem;
   border-radius: 5px;
   border: 1px solid transparent;
+  border-color: var(--primary-light);
   background: var(--input-bg);
   color: var(--text-primary);
   font-size: 1rem;
@@ -233,7 +241,6 @@ a:focus-visible {
 }
 
 .auth-form__input:focus-visible {
-  border-color: var(--primary-light);
   box-shadow: 0 0 0 4px rgba(9, 153, 255, 0.2);
 }
 
@@ -246,7 +253,6 @@ a:focus-visible {
   box-shadow: 0 0 0px 1000px var(--input-bg) inset;
   -webkit-text-fill-color: var(--primary-light);
   caret-color: var(--primary-light);
-  border-color: var(--primary-light);
 }
 
 .auth-form__controls {
@@ -288,7 +294,13 @@ a:focus-visible {
   color: var(--primary-hover);
 }
 
+.auth-form__return-login {
+  padding-top: 16px;
+  gap: 10px;
+}
+
 .auth-form__submit {
+  width: 100%;
   padding: 0.85rem 1.5rem;
   border: none;
   border-radius: 5px;
@@ -326,6 +338,8 @@ a:focus-visible {
 }
 
 .auth__providers {
+  width: min(100%, 480px);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -349,7 +363,7 @@ a:focus-visible {
   width: 100%;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(207, 7, 7, 0.04);
   border: 1px solid var(--border);
   color: var(--text-primary);
   font-weight: 600;
@@ -360,8 +374,8 @@ a:focus-visible {
 .provider-list__link:hover,
 .provider-list__link:focus-visible {
   transform: translateY(-1px);
-  border-color: rgba(9, 153, 255, 0.4);
-  background-color: rgba(9, 153, 255, 0.1);
+  border-color: var(--secondary-border-color);
+  background-color: var(--secondary-hover-bg);
 }
 
 .provider-list__link--google svg {
@@ -419,5 +433,19 @@ a:focus-visible {
 
   .provider-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .auth {
+    width: 100%;
+    padding: 2.75rem 1.5rem 3rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .auth__form-section {
+    width: 100%;
+    padding: 2rem 1.5rem;
   }
 }

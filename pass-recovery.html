@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HorseHubGames - Recuperar contraseña</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          class="site-header__brand"
+          href="#"
+          aria-label="Inicio HorseHubGames"
+        >
+          <span class="site-header__logo" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-chess-knight"
+              role="img"
+            >
+              <title>Caballo de ajedrez</title>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M8.959 1.99l-.147 .028l-.115 .029a1 1 0 0 0 -.646 1.27l.749 2.245l-2.815 1.735a2 2 0 0 0 -.655 2.751l.089 .133a2 2 0 0 0 1.614 .819l1.563 -.001l-1.614 4.674a1 1 0 0 0 .945 1.327h7.961a1 1 0 0 0 1 -.978l.112 -5c0 -3.827 -1.555 -6.878 -4.67 -7.966l-2.399 -.83l-.375 -.121l-.258 -.074l-.135 -.031l-.101 -.013l-.055 -.001l-.048 .003z"
+              />
+              <path
+                d="M18 18h-12a1 1 0 0 0 -1 1a2 2 0 0 0 2 2h10a2 2 0 0 0 1.987 -1.768l.011 -.174a1 1 0 0 0 -.998 -1.058z"
+              />
+            </svg>
+          </span>
+          <span class="site-header__title">HorseHubGames</span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Navegación principal">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Inicio</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Juegos</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Comunidad</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Soporte</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="button button--primary" href="#">Jugar ahora</a>
+          <a class="button button--secondary" href="#">Registrarse</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="auth">
+      <section class="auth__intro">
+        <h1 class="auth__title">Recupera tu contraseña</h1>
+        <p class="auth__subtitle">
+          Ingresa tu correo electrónico y te enviaremos un enlace para
+          restablecerla.
+        </p>
+      </section>
+
+      <section class="auth__form-section">
+        <form class="auth-form" action="submit" method="post">
+          <div class="auth-form__field">
+            <label class="auth-form__label" for="recovery-email"
+              >Correo electrónico</label
+            >
+            <input
+              class="auth-form__input"
+              type="email"
+              name="recovery-email"
+              id="recovery-email"
+              placeholder="correo@ejemplo.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <button class="auth-form__submit" type="submit">
+            Enviar enlace de recuperación
+          </button>
+        </form>
+      </section>
+
+      <section class="auth__divider" aria-label="Acceso alternativo">
+        <span class="auth__divider-line" aria-hidden="true"></span>
+        <span class="auth__divider-text">
+          <a
+            class="auth-form__return-login auth-form__forgot"
+            href="./index.html"
+            >Volver a iniciar sesión</a
+          ></span
+        >
+        <span class="auth__divider-line" aria-hidden="true"></span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small class="site-footer__copy"
+        >© HorseHubGames. Todos los derechos reservados.</small
+      >
+    </footer>
+  </body>
+</html>
