@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HorseHubGames - Perfil de usuario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page page--authenticated">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          class="site-header__brand"
+          href="./index.html"
+          aria-label="Inicio HorseHubGames"
+        >
+          <span class="site-header__logo" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-chess-knight"
+              role="img"
+            >
+              <title>Caballo de ajedrez</title>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M8.959 1.99l-.147 .028l-.115 .029a1 1 0 0 0 -.646 1.27l.749 2.245l-2.815 1.735a2 2 0 0 0 -.655 2.751l.089 .133a2 2 0 0 0 1.614 .819l1.563 -.001l-1.614 4.674a1 1 0 0 0 .945 1.327h7.961a1 1 0 0 0 1 -.978l.112 -5c0 -3.827 -1.555 -6.878 -4.67 -7.966l-2.399 -.83l-.375 -.121l-.258 -.074l-.135 -.031l-.101 -.013l-.055 -.001l-.048 .003z"
+              />
+              <path
+                d="M18 18h-12a1 1 0 0 0 -1 1a2 2 0 0 0 2 2h10a2 2 0 0 0 1.987 -1.768l.011 -.174a1 1 0 0 0 -.998 -1.058z"
+              />
+            </svg>
+          </span>
+          <span class="site-header__title">HorseHubGames</span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Navegación principal">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item">
+              <a
+                class="site-header__nav-link site-header__nav-link--active"
+                href="./home.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Juegos</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Comunidad</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a class="site-header__nav-link" href="#">Soporte</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="site-header__search" role="search">
+          <label class="site-header__search-label" for="global-search">
+            <span class="site-header__search-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </span>
+            <span class="hidden-span">Buscar juegos</span>
+          </label>
+          <input
+            class="site-header__search-input"
+            type="search"
+            name="global-search"
+            id="global-search"
+            placeholder="Busca por título, género o jugador"
+            autocomplete="off"
+            aria-label="Buscar juegos por título, género o jugador"
+          />
+        </form>
+
+        <div class="site-header__actions site-header__actions--user">
+          <button
+            class="site-header__action site-header__action--notifications"
+            type="button"
+            aria-controls="notifications-panel"
+            aria-expanded="false"
+          >
+            <span class="site-header__action-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-bell"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+                />
+                <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+              </svg>
+            </span>
+            <span class="site-header__action-label hidden-span"
+              >Notificaciones</span
+            >
+          </button>
+
+          <a
+            class="site-header__profile"
+            href="./profile.html"
+            data-has-avatar="true"
+          >
+            <span
+              class="site-header__avatar-fallback hidden-span"
+              aria-hidden="true"
+              >A</span
+            >
+            <span class="site-header__profile-name hidden-span"
+              >Alex Johnson</span
+            >
+            <span class="site-header__avatar-icon" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path
+                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                />
+              </svg>
+            </span>
+
+            <span class="site-header__avatar-media">
+              <img
+                class="site-header__avatar-image"
+                src="./alex-avatar.svg"
+                alt="mocked user avatar, man smiling to the camera"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="profile" aria-labelledby="profile-title">
+      <div class="profile__inner">
+        <aside class="profile-sidebar" aria-label="Navegación del perfil">
+          <nav class="profile-sidebar__nav" aria-label="Secciones del perfil">
+            <ul class="profile-sidebar__list">
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="./profile.html">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-user-circle"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path
+                        d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label"
+                    >Información personal</span
+                  >
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#estadisticas">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-chart-bar-popular"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+                      />
+                      <path
+                        d="M9 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+                      />
+                      <path
+                        d="M15 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+                      />
+                      <path d="M4 20h14" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Estadísticas</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#logros">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-trophy"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M8 21l8 0" />
+                      <path d="M12 17l0 4" />
+                      <path d="M7 4l10 0" />
+                      <path d="M17 4v8a5 5 0 0 1 -10 0v-8" />
+                      <path d="M5 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                      <path d="M19 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Logros</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a
+                  class="profile-sidebar__link profile-sidebar__link--active"
+                  href="./profile-history.html"
+                  aria-current="page"
+                >
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-history"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 8l0 4l2 2" />
+                      <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label"
+                    >Historial de partidas</span
+                  >
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#notificaciones">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icon-tabler-bell"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+                      />
+                      <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Notificaciones</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#seguridad">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-shield-half"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M11.998 2l.032 .002l.086 .005a1 1 0 0 1 .342 .104l.105 .062l.097 .076l.016 .015l.247 .21a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.791 -2.75l.046 -.036l.053 -.041a1 1 0 0 1 .217 -.112l.075 -.023l.036 -.01a1 1 0 0 1 .12 -.022l.086 -.005zm.002 2.296l-.176 .135a13 13 0 0 1 -7.288 2.572l-.264 .006l-.064 .31a11 11 0 0 0 1.064 7.175l.17 .314a11 11 0 0 0 6.49 5.136l.068 .019z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Seguridad</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#ajustes">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-settings"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+                      />
+                      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Ajustes globales</span>
+                </a>
+              </li>
+              <li class="profile-sidebar__item">
+                <a class="profile-sidebar__link" href="#suscripcion">
+                  <span class="profile-sidebar__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-calendar"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z"
+                      />
+                      <path
+                        d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="profile-sidebar__label">Suscripción</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div class="profile-content">
+          <section
+            class="profile-section history"
+            aria-labelledby="history-title"
+          >
+            <div class="history__intro">
+              <h1 class="history__title" id="history-title">
+                Historial de Partidas
+              </h1>
+              <p class="history__description">
+                Revisa tus partidas jugadas, filtra y busca para encontrar lo
+                que necesites
+              </p>
+            </div>
+
+            <form class="history-filters" action="#" method="get" novalidate>
+              <fieldset class="history-filters__fieldset">
+                <legend class="hidden-span">
+                  Filtros del historial de partidas
+                </legend>
+                <div class="history-filters__grid">
+                  <div class="profile-form__field history-filters__field">
+                    <label class="profile-form__label" for="history-game"
+                      >Filtrar por Juego</label
+                    >
+                    <select
+                      class="profile-section__visibility history-filters__select"
+                      name="game"
+                      id="history-game"
+                    >
+                      <option value="all">Todos</option>
+                      <option value="chess">Ajedrez</option>
+                      <option value="tic-tac-toe">Ta Te Ti</option>
+                      <option value="ludo">Ludo</option>
+                      <option value="damas">Damas</option>
+                    </select>
+                  </div>
+                  <div class="profile-form__field history-filters__field">
+                    <label class="profile-form__label" for="history-result"
+                      >Filtrar por Resultado</label
+                    >
+                    <select
+                      class="profile-section__visibility history-filters__select"
+                      name="result"
+                      id="history-result"
+                    >
+                      <option value="all">Todas</option>
+                      <option value="win">Ganadas</option>
+                      <option value="tale">Empatadas</option>
+                      <option value="lose">Perdidas</option>
+                    </select>
+                  </div>
+                  <div class="profile-form__field history-filters__field">
+                    <label class="profile-form__label" for="history-date"
+                      >Filtrar por Fecha</label
+                    >
+                    <input
+                      class="profile-form__input history-filters__input history-filters__input--date"
+                      type="date"
+                      name="date-filter"
+                      id="history-date"
+                    />
+                  </div>
+                  <div
+                    class="profile-form__field history-filters__field history-filters__field--search"
+                  >
+                    <label
+                      class="profile-form__label hidden-span"
+                      for="history-search"
+                      >Buscar por oponente o ID de partida</label
+                    >
+                    <div class="history-filters__search">
+                      <span
+                        class="history-filters__search-icon"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
+                          />
+                          <path d="M21 21l-6 -6" />
+                        </svg>
+                      </span>
+                      <input
+                        class="profile-form__input history-filters__input history-filters__input--search"
+                        type="search"
+                        name="history-search"
+                        id="history-search"
+                        placeholder="Buscar por oponente o ID de partida..."
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+
+            <div class="history__panel">
+              <div
+                class="history__table-wrapper"
+                role="region"
+                aria-labelledby="history-title"
+              >
+                <table class="history-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID Partida</th>
+                      <th scope="col">Juego</th>
+                      <th scope="col">Oponente</th>
+                      <th scope="col">Resultado</th>
+                      <th scope="col">Duración</th>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">
+                        <span class="hidden-span">Acciones</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="ID Partida">
+                        <span class="history-table__match-id">#G8A3F1</span>
+                      </td>
+                      <td data-label="Juego">
+                        <div class="history-table__game">
+                          <span class="history-table__media">
+                            <img src="./chess-394_640.jpg" alt="Ajedrez" />
+                          </span>
+                          <span class="history-table__text hidden-span">Ajedrez</span>
+                        </div>
+                      </td>
+                      <td data-label="Oponente">
+                        <div class="history-table__opponent">
+                          <span class="history-table__avatar">
+                            <img src="./john-doe.jpg" alt="man smiling" />
+                          </span>
+                          <span class="history-table__text">@john-doe</span>
+                        </div>
+                      </td>
+                      <td data-label="Resultado">
+                        <span
+                          class="history-table__status history-table__status--win"
+                          >Ganada</span
+                        >
+                      </td>
+                      <td data-label="Duración">
+                        <div class="history-table__duration">
+                          <span
+                            class="history-table__duration-icon"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-time-duration-15"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3"
+                              />
+                              <path d="M9 9v6" />
+                              <path d="M3 12v.01" />
+                              <path d="M12 21v.01" />
+                              <path d="M7.5 4.2v.01" />
+                              <path d="M16.5 19.8v.01" />
+                              <path d="M7.5 19.8v.01" />
+                              <path d="M4.2 16.5v.01" />
+                              <path d="M19.8 16.5v.01" />
+                              <path d="M4.2 7.5v.01" />
+                              <path d="M21 12a9 9 0 0 0 -9 -9" />
+                            </svg>
+                          </span>
+                          <time datetime="PT15M32S">15:32</time>
+                        </div>
+                      </td>
+                      <td data-label="Fecha">
+                        <time datetime="2023-09-27">2023-09-27</time>
+                      </td>
+                      <td data-label="Acciones">
+                        <a class="history-table__link" href="#">Ver Detalles</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="ID Partida">
+                        <span class="history-table__match-id">#L2B9C4</span>
+                      </td>
+                      <td data-label="Juego">
+                        <div class="history-table__game">
+                          <span class="history-table__media">
+                            <img
+                              src="./tic-tac-toe-392_640.jpg"
+                              alt="tic-tac-toe"
+                            />
+                          </span>
+                          <span class="history-table__text hidden-span">Ta Te Ti</span>
+                        </div>
+                      </td>
+                      <td data-label="Oponente">
+                        <div class="history-table__opponent">
+                          <span class="history-table__avatar">
+                            <img src="./jane-smith.jpg" alt="women profile" />
+                          </span>
+                          <span class="history-table__text">@jane_smith</span>
+                        </div>
+                      </td>
+                      <td data-label="Resultado">
+                        <span
+                          class="history-table__status history-table__status--loss"
+                          >Perdida</span
+                        >
+                      </td>
+                      <td data-label="Duración">
+                        <div class="history-table__duration">
+                          <span
+                            class="history-table__duration-icon"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-time-duration-15"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3"
+                              />
+                              <path d="M9 9v6" />
+                              <path d="M3 12v.01" />
+                              <path d="M12 21v.01" />
+                              <path d="M7.5 4.2v.01" />
+                              <path d="M16.5 19.8v.01" />
+                              <path d="M7.5 19.8v.01" />
+                              <path d="M4.2 16.5v.01" />
+                              <path d="M19.8 16.5v.01" />
+                              <path d="M4.2 7.5v.01" />
+                              <path d="M21 12a9 9 0 0 0 -9 -9" />
+                            </svg>
+                          </span>
+                          <time datetime="PT15M32S">15:32</time>
+                        </div>
+                      </td>
+                      <td data-label="Fecha">
+                        <time datetime="2023-12-27">2023-12-27</time>
+                      </td>
+                      <td data-label="Acciones">
+                        <a class="history-table__link" href="#">Ver Detalles</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="ID Partida">
+                        <span class="history-table__match-id">#C7D5E8</span>
+                      </td>
+                      <td data-label="Juego">
+                        <div class="history-table__game">
+                          <span class="history-table__media">
+                            <img
+                              src="./ludo-640-426.jpg"
+                              alt="lodo board game"
+                            />
+                          </span>
+                          <span class="history-table__text hidden-span">Ludo</span>
+                        </div>
+                      </td>
+                      <td data-label="Oponente">
+                        <div class="history-table__opponent">
+                          <span class="history-table__avatar">
+                            <img src="./fran-pro-gamer.jpg" alt="gamer boy" />
+                          </span>
+                          <span class="history-table__text">@fran-gamer</span>
+                        </div>
+                      </td>
+                      <td data-label="Resultado">
+                        <span
+                          class="history-table__status history-table__status--draw"
+                          >Empatada</span
+                        >
+                      </td>
+                      <td data-label="Duración">
+                        <div class="history-table__duration">
+                          <span
+                            class="history-table__duration-icon"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-time-duration-15"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3"
+                              />
+                              <path d="M9 9v6" />
+                              <path d="M3 12v.01" />
+                              <path d="M12 21v.01" />
+                              <path d="M7.5 4.2v.01" />
+                              <path d="M16.5 19.8v.01" />
+                              <path d="M7.5 19.8v.01" />
+                              <path d="M4.2 16.5v.01" />
+                              <path d="M19.8 16.5v.01" />
+                              <path d="M4.2 7.5v.01" />
+                              <path d="M21 12a9 9 0 0 0 -9 -9" />
+                            </svg>
+                          </span>
+                          <time datetime="PT15M32S">15:32</time>
+                        </div>
+                      </td>
+                      <td data-label="Fecha">
+                        <time datetime="2023-10-27">2023-10-27</time>
+                      </td>
+                      <td data-label="Acciones">
+                        <a class="history-table__link" href="#">Ver Detalles</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="ID Partida">
+                        <span class="history-table__match-id">#LHD5C4</span>
+                      </td>
+                      <td data-label="Juego">
+                        <div class="history-table__game">
+                          <span class="history-table__media">
+                            <img
+                              src="./tic-tac-toe-392_640.jpg"
+                              alt="tic-tac-toe"
+                            />
+                          </span>
+                          <span class="history-table__text hidden-span">Ta Te Ti</span>
+                        </div>
+                      </td>
+                      <td data-label="Oponente">
+                        <div class="history-table__opponent">
+                          <span class="history-table__avatar">
+                            <img src="./jane-smith.jpg" alt="women profile" />
+                          </span>
+                          <span class="history-table__text">@jane_smith</span>
+                        </div>
+                      </td>
+                      <td data-label="Resultado">
+                        <span
+                          class="history-table__status history-table__status--draw"
+                          >Empatada</span
+                        >
+                      </td>
+                      <td data-label="Duración">
+                        <div class="history-table__duration">
+                          <span
+                            class="history-table__duration-icon"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-time-duration-15"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3"
+                              />
+                              <path d="M9 9v6" />
+                              <path d="M3 12v.01" />
+                              <path d="M12 21v.01" />
+                              <path d="M7.5 4.2v.01" />
+                              <path d="M16.5 19.8v.01" />
+                              <path d="M7.5 19.8v.01" />
+                              <path d="M4.2 16.5v.01" />
+                              <path d="M19.8 16.5v.01" />
+                              <path d="M4.2 7.5v.01" />
+                              <path d="M21 12a9 9 0 0 0 -9 -9" />
+                            </svg>
+                          </span>
+                          <time datetime="PT15M32S">4:32</time>
+                        </div>
+                      </td>
+                      <td data-label="Fecha">
+                        <time datetime="2023-12-27">2023-12-27</time>
+                      </td>
+                      <td data-label="Acciones">
+                        <a class="history-table__link" href="#">Ver Detalles</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="ID Partida">
+                        <span class="history-table__match-id">#L239D4</span>
+                      </td>
+                      <td data-label="Juego">
+                        <div class="history-table__game">
+                          <span class="history-table__media">
+                            <img
+                              src="./tic-tac-toe-392_640.jpg"
+                              alt="tic-tac-toe"
+                            />
+                          </span>
+                          <span class="history-table__text hidden-span">Ta Te Ti</span>
+                        </div>
+                      </td>
+                      <td data-label="Oponente">
+                        <div class="history-table__opponent">
+                          <span class="history-table__avatar">
+                            <img src="./jane-smith.jpg" alt="women profile" />
+                          </span>
+                          <span class="history-table__text">@jane_smith</span>
+                        </div>
+                      </td>
+                      <td data-label="Resultado">
+                        <span
+                          class="history-table__status history-table__status--win"
+                          >Ganada</span
+                        >
+                      </td>
+                      <td data-label="Duración">
+                        <div class="history-table__duration">
+                          <span
+                            class="history-table__duration-icon"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="icon icon-tabler icons-tabler-outline icon-tabler-time-duration-15"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3"
+                              />
+                              <path d="M9 9v6" />
+                              <path d="M3 12v.01" />
+                              <path d="M12 21v.01" />
+                              <path d="M7.5 4.2v.01" />
+                              <path d="M16.5 19.8v.01" />
+                              <path d="M7.5 19.8v.01" />
+                              <path d="M4.2 16.5v.01" />
+                              <path d="M19.8 16.5v.01" />
+                              <path d="M4.2 7.5v.01" />
+                              <path d="M21 12a9 9 0 0 0 -9 -9" />
+                            </svg>
+                          </span>
+                          <time datetime="PT15M32S">10:32</time>
+                        </div>
+                      </td>
+                      <td data-label="Fecha">
+                        <time datetime="2023-12-27">2023-12-27</time>
+                      </td>
+                      <td data-label="Acciones">
+                        <a class="history-table__link" href="#">Ver Detalles</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <nav
+                class="history-pagination"
+                aria-label="Paginación del historial de partidas"
+              >
+                <div>
+                  <ul class="history-pagination__list">
+                    <li class="history-pagination__item">
+                      <a
+                        class="history-pagination__link history-pagination__link--prev"
+                        href="#"
+                        aria-label="Página anterior"
+                      >
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M5 12l6 6" />
+                            <path d="M5 12l6 -6" />
+                          </svg>
+                        </span>
+                        <span class="history-pagination__label">Anterior</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="history-pagination__list">
+                    <li class="history-pagination__item">
+                      <a
+                        class="history-pagination__link history-pagination__link--page"
+                        href="#"
+                        aria-current="page"
+                        >1</a
+                      >
+                    </li>
+                    <li class="history-pagination__item">
+                      <a
+                        class="history-pagination__link history-pagination__link--page"
+                        href="#"
+                        >2</a
+                      >
+                    </li>
+                    <li class="history-pagination__item">
+                      <a
+                        class="history-pagination__link history-pagination__link--page"
+                        href="#"
+                        >3</a
+                      >
+                    </li>
+                    <li class="history-pagination__item">
+                      <span
+                        class="history-pagination__ellipsis"
+                        aria-hidden="true"
+                        >...</span
+                      >
+                    </li>
+                    <li class="history-pagination__item">
+                      <a
+                        class="history-pagination__link history-pagination__link--page"
+                        href="#"
+                        >10</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="history-pagination__list">
+                    <li class="history-pagination__item">
+                      <a
+                        class="history-pagination__link history-pagination__link--next"
+                        href="#"
+                        aria-label="Página siguiente"
+                      >
+                        <span class="history-pagination__label">Siguiente</span>
+                        <span aria-hidden="true">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <small class="site-footer__copy"
+        >© HorseHubGames. Todos los derechos reservados.</small
+      >
+    </footer>
+  </body>
+</html>
